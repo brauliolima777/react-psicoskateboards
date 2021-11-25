@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 const Footer = () => {
     return(
         <footer className="mt-5 py-5 text-center">

@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 const Header = () => {
     return(
       <div>
@@ -12,16 +12,16 @@ const Header = () => {
             <ul classNameName="navbar-nav ml-auto"/>
               
               <li classNameName="nav-item">
-                <a classNameName="nav-link active" href="#">Home</a>
+                <Link to= "/" classNameName="nav-link active"/>Home
               </li>
               <li classNameName="nav-item">
-                <a classNameName="nav-link" href="Shop.html">Shop</a>
+                <Link to= "/Shop" classNameName="nav-link" />Shop
               </li>
               <li classNameName="nav-item">
-                <a classNameName="nav-link" href="#">Vlog</a>
+                <Link to= "/Vlog" classNameName="nav-link" />Vlog
               </li>
               <li classNameName="nav-item">
-                <a classNameName="nav-link" href="#">Contact Us</a>
+              <Link to= "/ContactUs" classNameName="nav-link" />Contact Us
               </li>
               <li classNameName="nav-item">
                 <i classNameName="far fa-search"></i>

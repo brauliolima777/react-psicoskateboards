@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 const Whatsnew = () => {
     return(
         <section id="new" className="w-100">

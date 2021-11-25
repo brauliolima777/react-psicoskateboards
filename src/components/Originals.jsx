@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 const Originals = () => {
     return(
         <section id='product-holder'id="featured" className="my-5 pb-5">
