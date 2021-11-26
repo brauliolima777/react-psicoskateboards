@@ -1,4 +1,9 @@
 import React from "react";
+import{BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 const Header = () => {
     return(
       <div>
@@ -12,16 +17,16 @@ const Header = () => {
             <ul classNameName="navbar-nav ml-auto"/>
               
               <li classNameName="nav-item">
-                <Link to= "/" classNameName="nav-link active"/>Home
+                <Link to="/" classNameName="nav-link active"/>Home
               </li>
               <li classNameName="nav-item">
-                <Link to= "/Shop" classNameName="nav-link" />Shop
+                <Link to="/Shop" classNameName="nav-link" />Shop
               </li>
               <li classNameName="nav-item">
-                <Link to= "/Vlog" classNameName="nav-link" />Vlog
+                <Link to="/Vlog" classNameName="nav-link" />Vlog
               </li>
               <li classNameName="nav-item">
-              <Link to= "/ContactUs" classNameName="nav-link" />Contact Us
+              <Link to="/ContactUs" classNameName="nav-link" />Contact Us
               </li>
               <li classNameName="nav-item">
                 <i classNameName="far fa-search"></i>
