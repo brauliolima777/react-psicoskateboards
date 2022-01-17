@@ -1,7 +1,7 @@
 import React from "react";
 
-function Shop () {
-    return
+const Shop = () => {
+    return (
      <div>
 
         <section id="featured" className="my-5 py-5">
@@ -109,6 +109,6 @@ function Shop () {
             </div>
         </section>
      </div>
-    ;
+    )
 }
-export default Shop ;
+export default Shop;

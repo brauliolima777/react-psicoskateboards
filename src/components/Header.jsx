@@ -4,33 +4,34 @@ import{BrowserRouter as Router,
   Route,
   Link
 } from "react-router-dom";
+
 const Header = () => {
     return(
       <div>
-        <nav classNameName="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
-        <div classNameName="container">
-          <a classNameName="navbar-brand" href="#">PSICO  skatebords</a>
-          <button classNameName="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i id="bar" classNameName="fas fa-bars"></i></span>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div className="container">
+          <a className="navbar-brand" href="#">PSICO  skatebords</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" className="fas fa-bars"></i></span>
           </button>
-          <div classNameName="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul classNameName="navbar-nav ml-auto"/>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ml-auto"/>
               
-              <li classNameName="nav-item">
-                <Link to="/" classNameName="nav-link active"/>Home
+              <li className="nav-item">
+                <Link to="/" className="nav-link active" />Home
               </li>
-              <li classNameName="nav-item">
-                <Link to="/Shop" classNameName="nav-link" />Shop
+              <li className="nav-item">
+                <Link to="/Shop" className="nav-link" />Shop
               </li>
-              <li classNameName="nav-item">
-                <Link to="/Vlog" classNameName="nav-link" />Vlog
+              <li className="nav-item">
+                <Link to="/Vlog" className="nav-link" />Vlog
               </li>
-              <li classNameName="nav-item">
-              <Link to="/ContactUs" classNameName="nav-link" />Contact Us
+              <li className="nav-item">
+                <Link to="/ContactUs" className="nav-link" />Contact Us 
               </li>
-              <li classNameName="nav-item">
-                <i classNameName="far fa-search"></i>
-                <i classNameName="far fa-shopping-cart">
+              <li className="nav-item">
+                <i className="far fa-search"></i>
+                <i className="far fa-shopping-cart">
                   <span>0</span>
                 </i>
                 <div id="cartCantProducts"></div>

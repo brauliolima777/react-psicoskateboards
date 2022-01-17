@@ -1,5 +1,20 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
+
 const Principal = () => {
+
+    const [products,setProducts] = useState ([])
+
+    useEffect (()=> {
+      fetch('http://localhost:5000/api/product')
+        .then(data => data.json())
+        .then(data => {
+          console.log(data);
+          setProducts(data)
+        })
+        .catch(error => console.log (error))
+    },[])
+
+
     return(
         <div>
             

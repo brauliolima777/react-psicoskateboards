@@ -21,11 +21,20 @@ body {
 
 }
 
+
+
+
 .navbar {
     font-size: 15px;
     font-weight: 800;
     top: 0;
     left: 0;
+}
+nav ul { 
+  list-style-type: none;
+  text-decoration: none ; 
+  margin: 0;
+  padding: 5;
 }
 .navbar-light .navbar-nav .navbar-link {
     padding: 0 20px;
@@ -251,4 +260,5 @@ footer .copyright a:hover{
   color: bisque;
   background-color: orange;
 }
+
 
