@@ -9,6 +9,8 @@ const routes = require ('./products/routes')
 const app = express()
 const port = process.env.PORT || 5000
 
+require ('dotenv'). config();
+
 
 app.use (bodyParser.urlencoded({ extended: false}))
 app.use (bodyParser.json())

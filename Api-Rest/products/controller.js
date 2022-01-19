@@ -1,5 +1,27 @@
+const {Pool} = require('../services/pool')
+
+const config = {
+    host: process.env.PGHOST,
+    database: process.env.PGDATABASE,
+    username: process.env.PGUSER,
+    password: process.env.PGPASSWORD
+}
+
+async function addProduct(req, res) {    
+    const result = await pool.query("insert into products (name, price, category) values ($1,$2,$3) returning *", 
+        [product.name, product.price, product.category]);        
+    res.send({message: 'El producto se agrego con exito', product: result.rows[result.rows.length-1]});
+}
+
 function getProducts(req,res) {
     res.send(products)
+}
+
+async function getProducts(req,res) {
+    console.log(config)        
+        const result = await pool.query("select * from products");
+        console.log(result.rows);        
+        res.send(result.rows);
 }
 let products = [{
     "name":"como un caballito",
